@@ -392,7 +392,7 @@ void image_multi_getimg (image_header_t *hdr, ulong idx,
 			ulong *data, ulong *len);
 
 inline void image_print_contents (image_header_t *hdr);
-inline void image_print_contents_noindent (image_header_t *hdr);
+/*inline*/ void image_print_contents_noindent (image_header_t *hdr);
 
 #ifndef USE_HOSTCC
 static inline int image_check_target_arch (image_header_t *hdr)
@@ -467,7 +467,7 @@ inline int fit_parse_subimage (const char *spec, ulong addr_curr,
 		ulong *addr, const char **image_name);
 
 inline void fit_print_contents (const void *fit);
-inline void fit_print_contents_noindent (const void *fit);
+/*inline*/ void fit_print_contents_noindent (const void *fit);
 void fit_image_print (const void *fit, int noffset, const char *p);
 void fit_image_print_hash (const void *fit, int noffset, const char *p);
 
